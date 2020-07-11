@@ -1,10 +1,14 @@
 import React from 'react';
 import Board from './Board';
 
-  class Game extends React.Component {
-    render() {
-      return (
+class Game extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Tic Toc Toe Game</h1>
+
         <div className="game">
+
           <div className="game-board">
             <Board />
           </div>
@@ -12,9 +16,9 @@ import Board from './Board';
             <div>{/* status */}</div>
             <ol>{/* TODO */}</ol>
           </div>
-        </div>
-      );
-    }
+        </div></div>
+    );
   }
+}
 
-  export default Game;
+export default Game;
