@@ -6,6 +6,12 @@ body {
   ol, ul {
     padding-left: 30px;
   }
+
+  .container{
+    display: flex;
+    justify-content: space-evenly;
+
+  }
   
   .board-row:after {
     clear: both;
@@ -32,6 +38,11 @@ body {
     width: 34px;
   }
   
+.winBox {
+  color: white;
+  background-color: seagreen;
+}
+
   .square:focus {
     outline: none;
   }
@@ -49,3 +60,11 @@ body {
     margin-left: 20px;
   }
   
+  .moveLink{
+    color: black;
+    cursor: pointer;
+  }
+
+  .active{
+    font-weight: bold;
+  }

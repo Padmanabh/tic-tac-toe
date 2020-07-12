@@ -18,7 +18,7 @@ import { render } from '@testing-library/react';
 
 function Square(props) {
     return (
-        <button className="square" onClick={() => { props.onClick(); }}>
+        <button className={`square ${props.winBox}`} onClick={() => { props.onClick(); }}>
             {/* {TODO} */}
             {props.value}
         </button>
